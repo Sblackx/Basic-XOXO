@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XOXO Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="total">
+      <div id="player1">Player 1 score: <span id="score1">0</span></div>
+      <div id="player2">Player 2 score: <span id="score2">0</span></div>
+    </div>
+
+    <br />
+    <div class="ctrlButtons">
+      <button id="restart" onclick="restart()">Restart</button>
+      <button id="end" onclick="end()">End</button>
+    </div>
+    <div id="winner"></div>
+    <div class="container">
+      <div class="matrix">
+        <button onclick="setter1()" id="1">
+          <div class="x"></div>
+          <div class="o"></div>
+        </button>
+        <button onclick="setter2()" id="2">
+          <div class="x"></div>
+          <div class="o"></div>
+        </button>
+        <button onclick="setter3()" id="3">
+          <div class="x"></div>
+          <div class="o"></div>
+        </button>
+        <button onclick="setter4()" id="4">
+          <div class="x"></div>
+          <div class="o"></div>
+        </button>
+        <button onclick="setter5()" id="5">
+          <div class="x"></div>
+          <div class="o"></div>
+        </button>
+        <button onclick="setter6()" id="6">
+          <div class="x"></div>
+          <div class="o"></div>
+        </button>
+        <button onclick="setter7()" id="7">
+          <div class="x"></div>
+          <div class="o"></div>
+        </button>
+        <button onclick="setter8()" id="8">
+          <div class="x"></div>
+          <div class="o"></div>
+        </button>
+        <button onclick="setter9()" id="9">
+          <div class="x"></div>
+          <div class="o"></div>
+        </button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

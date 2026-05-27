@@ -1,0 +1,171 @@
+/*To center the container matrix is to make the parent of the window flex to and then center the items*/
+body {
+
+    margin: 0;
+        background: #E1D4C2;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    /* position: absolute; */
+
+}
+
+.matrix {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 630px;
+    margin: auto;
+
+
+    /* align-items: center;
+    justify-content: center; */
+
+
+
+
+
+}
+
+.matrix button {
+    width: 200px;
+    height: 200px;
+    background-color: #54ABCF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.matrix button:hover {
+    background: #26658C;
+
+
+}
+
+#total {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #26658C;
+    ;
+}
+
+#player1, #player2 {
+    box-shadow: 5px 4px 10px 3px #26658C;
+    padding: 10px;
+    border-radius: 10PX;
+}
+
+
+
+#winner {
+    font-size: 2rem;
+
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+
+    backdrop-filter: blur(2px);
+    background-color: #26658C;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.ctrlButtons {
+    display: flex;
+    justify-content: space-between;
+
+
+    align-items: center;
+
+
+}
+
+#end, #restart {
+    border-radius: 10px;
+    padding: 15px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+#end {
+
+    background-color: brown;
+
+
+}
+
+#restart {
+
+    background-color:#80A416;
+
+}
+
+.x {
+    display: none;
+    width: 10px;
+    height: 100px;
+    background: transparent;
+    position: relative;
+
+}
+
+.x::after, .x::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 10px;
+    background: #E3EED4;
+    top: 0;
+    left: 0;
+}
+
+.x::before {
+
+    transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+}
+
+.x::after {
+
+    transform: rotateZ(-45deg);
+    -webkit-transform: rotateZ(-45deg);
+    -moz-transform: rotateZ(-45deg);
+    -ms-transform: rotateZ(-45deg);
+    -o-transform: rotateZ(-45deg);
+}
+
+.o {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border: 7px solid #d2ebb0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+}
